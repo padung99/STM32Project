@@ -1,0 +1,14 @@
+core_cm4.h:2064:26:ITM_SendChar	16	static,ignoring_inline_asm
+main.c:134:5:main	24	static
+main.c:245:6:SystemClock_Config	88	static
+main.c:289:13:MX_DAC_Init	16	static
+main.c:327:13:MX_TIM2_Init	32	static
+main.c:370:13:MX_DMA_Init	16	static
+main.c:388:13:MX_GPIO_Init	40	static
+main.c:411:6:sum_signal	16	static
+main.c:423:6:noise	16	static
+main.c:430:6:sinval	16	static
+main.c:437:6:sinval2	16	static
+main.c:456:6:fir	8	static
+main.c:467:5:_write	32	static
+main.c:481:6:Error_Handler	4	static,ignoring_inline_asm

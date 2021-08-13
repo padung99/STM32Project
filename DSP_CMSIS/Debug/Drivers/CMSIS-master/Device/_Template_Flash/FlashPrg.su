@@ -1,0 +1,5 @@
+FlashPrg.c:70:5:Init	24	static
+FlashPrg.c:83:5:UnInit	16	static
+FlashPrg.c:95:5:EraseChip	4	static
+FlashPrg.c:108:5:EraseSector	16	static
+FlashPrg.c:123:5:ProgramPage	24	static
