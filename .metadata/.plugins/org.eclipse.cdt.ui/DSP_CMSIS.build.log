@@ -1,29 +1,10 @@
-19:27:38 **** Incremental Build of configuration Debug for project DSP_CMSIS ****
+20:14:36 **** Incremental Build of configuration Debug for project DSP_CMSIS ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:192:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
-  192 |   printf("%f\n", outputF32[a]);
-      |   ^~~~~~
-../Core/Src/main.c:192:3: warning: incompatible implicit declaration of built-in function 'printf'
-../Core/Src/main.c:29:1: note: include '<stdio.h>' or provide a declaration of 'printf'
-   28 | #include "stdlib.h"
-  +++ |+#include <stdio.h>
-   29 | /* USER CODE END Includes */
-arm-none-eabi-gcc -o "DSP_CMSIS.elf" @"objects.list"  -larm_cortexM4lf_math -mcpu=cortex-m4 -T"H:\STM32CubeIDE\DSP_CMSIS\DSP_CMSIS\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DSP_CMSIS.map" -Wl,--gc-sections -static -L"H:\STM32CubeIDE\DSP_CMSIS\DSP_CMSIS\lib" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: DSP_CMSIS.elf
- 
 arm-none-eabi-size   DSP_CMSIS.elf 
-arm-none-eabi-objdump -h -S  DSP_CMSIS.elf  > "DSP_CMSIS.list"
-arm-none-eabi-objcopy  -O binary  DSP_CMSIS.elf  "DSP_CMSIS.bin"
    text	   data	    bss	    dec	    hex	filename
-  41876	    496	  20064	  62436	   f3e4	DSP_CMSIS.elf
+  41924	    496	  20064	  62484	   f414	DSP_CMSIS.elf
 Finished building: default.size.stdout
  
-Finished building: DSP_CMSIS.bin
- 
-Finished building: DSP_CMSIS.list
- 
 
-19:27:39 Build Finished. 0 errors, 2 warnings. (took 794ms)
+20:14:37 Build Finished. 0 errors, 0 warnings. (took 234ms)
 

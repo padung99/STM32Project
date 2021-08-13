@@ -423,21 +423,21 @@ void sum_signal() //Generating Sinewave with noise ==> signal before filtering
 void noise()  //Noise generation
 {
 	for(int i = 0; i < TEST_LENGTH_SAMPLES; i++)
-			val_noise[i] = (rand() % 5)*((0xFF+1)/2);
+			val_noise[i] = (rand() % 12)*((0xFF+1)/2);
 
 }
 
 void sinval() //Sinewave generation
 {
 	for(int i = 0; i < TEST_LENGTH_SAMPLES; i++)
-		val[i] = ((sin(i*pi*2/TEST_LENGTH_SAMPLES)+1)*((0xFFF+1)/2));
+		val[i] = ((sin(i*pi*2/TEST_LENGTH_SAMPLES)+1)*((0xFFF+1)/2))/3; //divide by 3 to make amplitude smaller
 
 }
 
 void sinval2() //Sinewave generation
 {
 	for(int i = 0; i < TEST_LENGTH_SAMPLES; i++)
-		val2[i] = ((sin((10*i*pi*2/TEST_LENGTH_SAMPLES))+1)*((0xFFF+1)/2));
+		val2[i] = ((sin((10*i*pi*2/TEST_LENGTH_SAMPLES))+1)*((0xFFF+1)/2))/3; //divide by 3 to make amplitude smaller
 
 }
 
